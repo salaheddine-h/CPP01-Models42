@@ -6,35 +6,35 @@
 /*   By: salhali <salhali@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/28 16:36:11 by salhali           #+#    #+#             */
-/*   Updated: 2025/09/28 17:04:48 by salhali          ###   ########.fr       */
+/*   Updated: 2025/09/30 18:07:19 by salhali          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
-#include <string.h>
+// #include <iostream>
+// #include <string.h>
 
-class Zombie
-{
-    private :
-    std::string name;
+
+
+
+// // void    Zombie::announce();
+// int main()
+// {
+//     Zombie zombie("BraiiiiiiinnnzzzZ...");
     
-    public :
-        Zombie(std::string jname) : name(jname) {};
-        void    newZombie(); // white malloc and free 
-        void    randomChump(); // whiteout malloc or free
-        void announce(void) {};
-        std::string getname() const
-        {
-            return(name);
-        }
-};
+//     zombie.announce();
+//     std::cout<<"string = "<< zombie.getname()<<std::endl;
+// }
 
 
-// void    Zombie::announce();
-int main()
-{
-    Zombie zombie("BraiiiiiiinnnzzzZ...");
-    
-    zombie.announce();
-    std::cout<<"string = "<< zombie.getname()<<std::endl;
-}
+#include "Zombie.hpp"
+
+int main(){
+    Zombie z1("foo");
+    Zombie* z2 = newZombie("jii");
+
+    z1.announce();
+    z2->announce();
+    randomChump("maa");
+    delete z2;
+    return 0;
+}⏎ 
