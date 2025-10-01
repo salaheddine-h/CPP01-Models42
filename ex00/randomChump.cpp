@@ -3,10 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   randomChump.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: salhali <salhali@student.42.fr>            +#+  +:+       +#+        */
+/*   By: salah <salah@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/30 18:05:54 by salhali           #+#    #+#             */
-/*   Updated: 2025/09/30 18:05:55 by salhali          ###   ########.fr       */
+/*   Updated: 2025/10/01 16:48:35 by salah            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "Zombie.hpp"
+
+void randomChump( std::string name )
+{
+    Zombie z3(name);
+    z3.announce();
+}
 
