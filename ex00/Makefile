@@ -1,8 +1,8 @@
 NAME = test
 
-SRC = *cpp
+SRC = main.cpp
 
-HDR = *hpp
+HDR = Zombie.hpp
 
 CC = c++
 
