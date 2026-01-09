@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/08 22:03:51 by marvin            #+#    #+#             */
-/*   Updated: 2026/01/08 22:37:57 by marvin           ###   ########.fr       */
+/*   Updated: 2026/01/09 16:38:39 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,9 @@ int main(int argc, char **argv)
     Zombie* z = zombieHorde(argv[1], "Horde");
     if (z == NULL)
         return (1);
-    for (int i = 0; i < atoi(argv[1]); i++)
-    {
+    int n = atoi(argv[1]);
+    for (int i = 0; i < n ; i++)
         z[i].announce();
-    }
     delete [] z;
     return (0);
 }
