@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Zombie.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: salah <salah@student.42.fr>                +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/30 18:06:35 by salhali           #+#    #+#             */
-/*   Updated: 2025/10/01 16:53:35 by salah            ###   ########.fr       */
+/*   Updated: 2026/01/11 16:18:18 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 class Zombie
 {
     private:
-        std::string name; // donc hna 3ndi foo (dirct init);
+        std::string name;
     public:
         Zombie(std::string string);
         ~Zombie();

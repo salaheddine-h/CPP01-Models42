@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/08 21:25:20 by marvin            #+#    #+#             */
-/*   Updated: 2026/01/08 21:53:59 by marvin           ###   ########.fr       */
+/*   Updated: 2026/01/11 17:21:36 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 Zombie::Zombie(std::string name) : name(name)
 {
-    std::cout << "Zombie11111 " << name << " created." << std::endl;
+    std::cout << "Zombie " << name << " created." << std::endl;
 }
 
 Zombie::~Zombie()
