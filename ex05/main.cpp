@@ -14,8 +14,9 @@
 
 int main()
 {
-    Har1   T;
+    Harl   T;
 
     T.complain("DEBUG");
+    T.complain("INFO");
     return(0);
 }
