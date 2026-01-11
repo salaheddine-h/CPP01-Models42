@@ -6,7 +6,7 @@ FLAGS = -Wall -Wextra -Werror -std=c++98
 
 SRC = main.cpp Zombie.cpp newZombie.cpp randomChump.cpp
 
-HDR = Zombie.hpp
+HDR = *.hpp
 
 all : $(NAME)
 
