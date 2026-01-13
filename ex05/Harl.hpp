@@ -25,6 +25,7 @@ class Harl
         void    error();
     public:
         void    complain(std::string name);
+        void    print_error();
 };
 
 #endif

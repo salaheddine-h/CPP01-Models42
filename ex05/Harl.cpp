@@ -25,13 +25,19 @@ void    Harl::warning(void) {
 }
 
 void    Harl::error(void) {
-        std::cout << "This is unacceptable! I want to speak to the manager now." << std::endl;
+        std::cout << "This is unacceptable! I want to speak to the manager now.\n" << std::endl;
 }
 
 void    Harl::complain(std::string name)
 {
         std::string names[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
-        void(Harl::*functions[])() = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
+        void (Harl::*functions[])() = {
+        &Harl::debug,
+        &Harl::info,
+        &Harl::warning,
+        &Harl::error
+        };
+        // void(Harl::*functions[])() = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
         for (int i = 0; i < 4; i++)
         {
                 if (names[i] == name)
@@ -42,3 +48,12 @@ void    Harl::complain(std::string name)
         }
 }
 
+void    Harl::print_error()
+{
+        Harl    T;
+
+        T.complain("DEBUG");
+        T.complain("INFO");
+        T.complain("WARNING");
+        T.complain("ERROR");
+}

@@ -16,7 +16,6 @@ int main()
 {
     Harl   T;
 
-    T.complain("DEBUG");
-    T.complain("INFO");
+    T.print_error();
     return(0);
 }
