@@ -16,9 +16,17 @@
 int main()
 {
     std::string str = "HI THIS IS BRAIN";
+    // here created a space in stack off memory
+    // str = "HI THIS IS BRAIN"
+    // &str = "0x7fff830fc9b0" 
     std::string *PtrString = &str;
+    // *PtrString = "HI THIS IS BRAIN"
+    // PtrString = "0x7fff830fc9b0" this pointer its has val to the first var ptr = &str
     std::string &RefString = str;
-    // RefString = "SALAHEDDINE";
+    // &RefString = str;
+    // is just alias Ref
+    // is str = salah is the best in the world 
+    // alias to str is also have the same val and the same adress
 
 	std::cout << "The memory address of the string variable : " << &str << std::endl;
 	std::cout << "The memory address held by stringPTR      : " << PtrString << std::endl;

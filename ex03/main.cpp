@@ -16,14 +16,17 @@
 int main()
 {
     {
-        //Wexapon is class 
-        // club is object call from the class 
+        //Weapon is class 
+
         Weapon club = Weapon("crude spiked club");
-        // std::cout << "Weapon data = " << club.getType() << std::endl;
-        HumanA bob("Bob", club);
-        bob.attack();
+        // crude spiked club is just name the club in the class weapon
+
+        HumanA zalija("Bob", club);
+        // object zalij set the val bob in the  
+        // set the bob by a string and set the club object by the refr
+        zalija.attack();
         club.setType("some other type of club");
-        bob.attack();
+        zalija.attack();
     }
     {
         Weapon club = Weapon("crude spiked club");

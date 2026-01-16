@@ -1,5 +1,11 @@
 #include "HumanB.hpp"
 
+HumanB::HumanB(std::string new_name)
+{
+	this->name = new_name;
+	this->AK47 = NULL;
+}
+
 void	HumanB::attack(void)
 {
 	if (!AK47)
@@ -8,14 +14,8 @@ void	HumanB::attack(void)
 		std::cout  << this->name << " attacks with their " << this->AK47->getType() << std::endl;
 }
 
-HumanB::HumanB(std::string new_name)
-{
-	this->name = new_name;
-	this->AK47 = NULL;
-}
-
 void	HumanB::setWeapon(Weapon &new_weapon)
 {
-	this->AK47 = &new_weapon;
+	this->AK47 = &
 }
 

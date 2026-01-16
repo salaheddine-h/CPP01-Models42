@@ -30,7 +30,7 @@ void    Harl::error(void) {
 
 void    Harl::complain(std::string name)
 {
-        std::string names[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
+        std::string Names[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
         void (Harl::*functions[])() = {
         &Harl::debug,
         &Harl::info,
@@ -40,7 +40,7 @@ void    Harl::complain(std::string name)
         // void(Harl::*functions[])() = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
         for (int i = 0; i < 4; i++)
         {
-                if (names[i] == name)
+                if (Names[i] == name)
                 {
                         (this->*functions[i])();
                         return ;
@@ -48,7 +48,7 @@ void    Harl::complain(std::string name)
         }
 }
 
-void    Harl::print_error()
+void    Harl::print_debugs()
 {
         Harl    T;
 

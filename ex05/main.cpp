@@ -16,6 +16,6 @@ int main()
 {
     Harl   T;
 
-    T.print_error();
+    T.print_debugs();
     return(0);
 }
